@@ -1,0 +1,201 @@
+.sfm-contact-hero {
+  background-color: var(--color-dark);
+  padding: 150px 0 80px;
+  text-align: center;
+}
+
+.sfm-contact-hero h1 {
+  color: var(--color-white);
+  margin-bottom: var(--spacing-4);
+}
+
+.sfm-contact-hero p {
+  color: var(--color-gray-400);
+  font-size: var(--font-size-lg);
+  margin-bottom: 0;
+}
+
+.sfm-contact__content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-12);
+}
+
+.sfm-contact__info h2 {
+  margin-bottom: var(--spacing-4);
+}
+
+.sfm-contact__info > p {
+  color: var(--color-gray-500);
+  font-size: var(--font-size-lg);
+  margin-bottom: var(--spacing-8);
+}
+
+.sfm-contact__methods {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-6);
+  margin-bottom: var(--spacing-8);
+}
+
+.sfm-contact__method {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-4);
+  color: var(--color-dark);
+  transition: color var(--transition-fast);
+}
+
+.sfm-contact__method:hover {
+  color: var(--color-primary);
+}
+
+.sfm-contact__method-icon {
+  width: 50px;
+  height: 50px;
+  background-color: var(--color-primary);
+  border-radius: var(--border-radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  color: var(--color-dark);
+  flex-shrink: 0;
+}
+
+.sfm-contact__method h3 {
+  font-size: var(--font-size-base);
+  margin-bottom: var(--spacing-1);
+}
+
+.sfm-contact__method p {
+  color: var(--color-gray-500);
+  margin-bottom: 0;
+}
+
+.sfm-contact__hours {
+  background-color: var(--color-gray-100);
+  padding: var(--spacing-6);
+  border-radius: var(--border-radius-lg);
+}
+
+.sfm-contact__hours h3 {
+  font-size: var(--font-size-lg);
+  margin-bottom: var(--spacing-4);
+}
+
+.sfm-contact__hours p {
+  color: var(--color-gray-600);
+  margin-bottom: var(--spacing-2);
+}
+
+.sfm-contact__hours p:last-child {
+  margin-bottom: 0;
+}
+
+.sfm-contact__form-wrapper {
+  background-color: var(--color-gray-100);
+  padding: var(--spacing-8);
+  border-radius: var(--border-radius-lg);
+}
+
+.sfm-contact__form h2 {
+  margin-bottom: var(--spacing-6);
+}
+
+.sfm-contact__form-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-4);
+  margin-bottom: var(--spacing-4);
+}
+
+.sfm-contact__form-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2);
+}
+
+.sfm-contact__form-group label {
+  font-weight: 500;
+  font-size: var(--font-size-sm);
+  color: var(--color-gray-600);
+}
+
+.sfm-contact__form-group input,
+.sfm-contact__form-group select,
+.sfm-contact__form-group textarea {
+  padding: var(--spacing-3) var(--spacing-4);
+  border: 2px solid var(--color-gray-200);
+  border-radius: var(--border-radius);
+  background-color: var(--color-white);
+  transition: border-color var(--transition-fast);
+}
+
+.sfm-contact__form-group input:focus,
+.sfm-contact__form-group select:focus,
+.sfm-contact__form-group textarea:focus {
+  outline: none;
+  border-color: var(--color-primary);
+}
+
+.sfm-contact__input--error {
+  border-color: var(--color-error) !important;
+}
+
+.sfm-contact__error {
+  font-size: var(--font-size-sm);
+  color: var(--color-error);
+}
+
+.sfm-contact__form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.sfm-contact__submit {
+  width: 100%;
+  margin-top: var(--spacing-4);
+}
+
+.sfm-contact__success {
+  text-align: center;
+  padding: var(--spacing-8) 0;
+}
+
+.sfm-contact__success-icon {
+  width: 80px;
+  height: 80px;
+  background-color: var(--color-success);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto var(--spacing-6);
+}
+
+.sfm-contact__success-icon svg {
+  font-size: 2.5rem;
+  color: var(--color-white);
+}
+
+.sfm-contact__success h2 {
+  margin-bottom: var(--spacing-4);
+}
+
+.sfm-contact__success p {
+  color: var(--color-gray-500);
+  margin-bottom: var(--spacing-6);
+}
+
+@media (min-width: 768px) {
+  .sfm-contact__form-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .sfm-contact__content {
+    grid-template-columns: 1fr 1.2fr;
+  }
+}

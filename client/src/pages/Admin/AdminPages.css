@@ -1,0 +1,35 @@
+.sfm-admin-page {
+  min-height: 100vh;
+  background-color: var(--color-gray-100);
+  padding: var(--spacing-8);
+}
+
+.sfm-admin-page__header {
+  margin-bottom: var(--spacing-8);
+}
+
+.sfm-admin-page__back {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-2);
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-4);
+  transition: gap var(--transition-fast);
+}
+
+.sfm-admin-page__back:hover {
+  gap: var(--spacing-3);
+}
+
+.sfm-admin-page__content {
+  background-color: var(--color-white);
+  padding: var(--spacing-8);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow);
+}
+
+.sfm-admin-page__placeholder {
+  color: var(--color-gray-500);
+  text-align: center;
+  padding: var(--spacing-8) 0;
+}

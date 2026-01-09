@@ -1,0 +1,19 @@
+{
+  "name": "silverfox-media",
+  "version": "1.0.0",
+  "description": "SilverFox Media - UX/UI Design & Web Development",
+  "scripts": {
+    "start": "node server/index.js",
+    "server": "nodemon server/index.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "build": "npm run build --prefix client",
+    "install-all": "npm install && npm install --prefix client && npm install --prefix server"
+  },
+  "keywords": ["mern", "web-development", "silverfox-media"],
+  "author": "SilverFox Media",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

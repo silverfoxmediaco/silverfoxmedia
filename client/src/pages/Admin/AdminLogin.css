@@ -1,0 +1,58 @@
+.sfm-admin-login {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-dark);
+  padding: var(--spacing-8);
+}
+
+.sfm-admin-login__card {
+  width: 100%;
+  max-width: 400px;
+  background-color: var(--color-dark-lighter);
+  padding: var(--spacing-8);
+  border-radius: var(--border-radius-lg);
+}
+
+.sfm-admin-login__logo {
+  height: 50px;
+  width: auto;
+  margin-bottom: var(--spacing-8);
+}
+
+.sfm-admin-login__title {
+  color: var(--color-white);
+  margin-bottom: var(--spacing-6);
+}
+
+.sfm-admin-login__group {
+  margin-bottom: var(--spacing-4);
+}
+
+.sfm-admin-login__group label {
+  display: block;
+  color: var(--color-gray-400);
+  font-size: var(--font-size-sm);
+  margin-bottom: var(--spacing-2);
+}
+
+.sfm-admin-login__group input {
+  width: 100%;
+  padding: var(--spacing-3) var(--spacing-4);
+  background-color: var(--color-dark);
+  border: 2px solid var(--color-dark-lightest);
+  border-radius: var(--border-radius);
+  color: var(--color-white);
+  transition: border-color var(--transition-fast);
+}
+
+.sfm-admin-login__group input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+}
+
+.sfm-admin-login__submit {
+  width: 100%;
+  margin-top: var(--spacing-4);
+}

@@ -1,0 +1,108 @@
+.sfm-success {
+  padding-top: 150px;
+}
+
+.sfm-success__content {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.sfm-success__icon {
+  width: 100px;
+  height: 100px;
+  background-color: var(--color-success);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto var(--spacing-8);
+}
+
+.sfm-success__icon svg {
+  font-size: 3rem;
+  color: var(--color-white);
+}
+
+.sfm-success__content h1 {
+  margin-bottom: var(--spacing-4);
+}
+
+.sfm-success__message {
+  color: var(--color-gray-500);
+  font-size: var(--font-size-lg);
+  margin-bottom: var(--spacing-12);
+}
+
+.sfm-success__template {
+  text-align: left;
+  margin-bottom: var(--spacing-12);
+}
+
+.sfm-success__template h2 {
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--spacing-4);
+}
+
+.sfm-success__template-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-6);
+  background-color: var(--color-gray-100);
+  padding: var(--spacing-6);
+  border-radius: var(--border-radius-lg);
+}
+
+.sfm-success__template-card img {
+  border-radius: var(--border-radius);
+  width: 100%;
+}
+
+.sfm-success__template-info h3 {
+  font-size: var(--font-size-lg);
+  margin-bottom: var(--spacing-2);
+}
+
+.sfm-success__template-info p {
+  color: var(--color-gray-500);
+  margin-bottom: var(--spacing-4);
+}
+
+.sfm-success__actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--spacing-4);
+  margin-bottom: var(--spacing-12);
+}
+
+.sfm-success__support {
+  padding: var(--spacing-6);
+  background-color: var(--color-gray-100);
+  border-radius: var(--border-radius-lg);
+}
+
+.sfm-success__support p {
+  color: var(--color-gray-600);
+  margin-bottom: var(--spacing-2);
+}
+
+.sfm-success__support p:last-child {
+  margin-bottom: 0;
+}
+
+.sfm-success__support a {
+  color: var(--color-primary);
+  font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  .sfm-success__template-card {
+    flex-direction: row;
+  }
+
+  .sfm-success__template-card img {
+    width: 200px;
+    flex-shrink: 0;
+  }
+}

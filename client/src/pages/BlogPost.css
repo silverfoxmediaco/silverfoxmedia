@@ -1,0 +1,200 @@
+.sfm-blogpost__hero {
+  background-color: var(--color-dark);
+  padding: 150px 0 80px;
+}
+
+.sfm-blogpost__back {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-2);
+  color: var(--color-gray-400);
+  margin-bottom: var(--spacing-6);
+  transition: color var(--transition-fast);
+}
+
+.sfm-blogpost__back:hover {
+  color: var(--color-primary);
+}
+
+.sfm-blogpost__category {
+  display: inline-block;
+  padding: var(--spacing-1) var(--spacing-3);
+  background-color: var(--color-primary);
+  color: var(--color-dark);
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: var(--border-radius-sm);
+  margin-bottom: var(--spacing-4);
+}
+
+.sfm-blogpost__hero h1 {
+  color: var(--color-white);
+  margin-bottom: var(--spacing-6);
+  max-width: 800px;
+}
+
+.sfm-blogpost__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-6);
+}
+
+.sfm-blogpost__meta-item {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-2);
+  color: var(--color-gray-400);
+  font-size: var(--font-size-sm);
+}
+
+.sfm-blogpost__layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-12);
+}
+
+.sfm-blogpost__featured-image {
+  width: 100%;
+  border-radius: var(--border-radius-lg);
+  margin-bottom: var(--spacing-8);
+}
+
+.sfm-blogpost__body {
+  font-size: var(--font-size-lg);
+  line-height: 1.8;
+}
+
+.sfm-blogpost__body h2,
+.sfm-blogpost__body h3,
+.sfm-blogpost__body h4 {
+  margin-top: var(--spacing-8);
+}
+
+.sfm-blogpost__body p {
+  margin-bottom: var(--spacing-6);
+}
+
+.sfm-blogpost__body ul,
+.sfm-blogpost__body ol {
+  margin-bottom: var(--spacing-6);
+  padding-left: var(--spacing-6);
+}
+
+.sfm-blogpost__body li {
+  margin-bottom: var(--spacing-2);
+  list-style: disc;
+}
+
+.sfm-blogpost__body ol li {
+  list-style: decimal;
+}
+
+.sfm-blogpost__body img {
+  border-radius: var(--border-radius);
+  margin: var(--spacing-6) 0;
+}
+
+.sfm-blogpost__body blockquote {
+  border-left: 4px solid var(--color-primary);
+  padding-left: var(--spacing-6);
+  margin: var(--spacing-8) 0;
+  font-style: italic;
+  color: var(--color-gray-600);
+}
+
+.sfm-blogpost__body code {
+  background-color: var(--color-gray-100);
+  padding: var(--spacing-1) var(--spacing-2);
+  border-radius: var(--border-radius-sm);
+  font-family: monospace;
+}
+
+.sfm-blogpost__body pre {
+  background-color: var(--color-dark);
+  color: var(--color-white);
+  padding: var(--spacing-6);
+  border-radius: var(--border-radius);
+  overflow-x: auto;
+  margin: var(--spacing-6) 0;
+}
+
+.sfm-blogpost__body pre code {
+  background-color: transparent;
+  padding: 0;
+}
+
+.sfm-blogpost__tags {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--spacing-3);
+  margin-top: var(--spacing-8);
+  padding-top: var(--spacing-8);
+  border-top: 1px solid var(--color-gray-200);
+}
+
+.sfm-blogpost__tags svg {
+  color: var(--color-gray-500);
+}
+
+.sfm-blogpost__tag {
+  padding: var(--spacing-1) var(--spacing-3);
+  background-color: var(--color-gray-100);
+  color: var(--color-gray-600);
+  font-size: var(--font-size-sm);
+  border-radius: var(--border-radius-full);
+  transition: all var(--transition-fast);
+}
+
+.sfm-blogpost__tag:hover {
+  background-color: var(--color-primary);
+  color: var(--color-dark);
+}
+
+.sfm-blogpost__cta-card,
+.sfm-blogpost__contact-card {
+  background-color: var(--color-gray-100);
+  padding: var(--spacing-6);
+  border-radius: var(--border-radius-lg);
+  margin-bottom: var(--spacing-6);
+}
+
+.sfm-blogpost__cta-card h3,
+.sfm-blogpost__contact-card h3 {
+  font-size: var(--font-size-lg);
+  margin-bottom: var(--spacing-2);
+}
+
+.sfm-blogpost__cta-card p,
+.sfm-blogpost__contact-card p {
+  color: var(--color-gray-500);
+  margin-bottom: var(--spacing-4);
+}
+
+.sfm-blogpost__cta-card .btn {
+  width: 100%;
+}
+
+.sfm-blogpost__contact-link {
+  display: block;
+  color: var(--color-primary);
+  font-weight: 500;
+  margin-bottom: var(--spacing-2);
+}
+
+.sfm-blogpost-error {
+  padding-top: 150px;
+}
+
+@media (min-width: 1024px) {
+  .sfm-blogpost__layout {
+    grid-template-columns: 1fr 350px;
+  }
+
+  .sfm-blogpost__sidebar {
+    position: sticky;
+    top: 120px;
+    align-self: start;
+  }
+}
