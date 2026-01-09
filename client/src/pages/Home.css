@@ -4,9 +4,26 @@
   align-items: center;
   background-color: var(--color-dark);
   background-size: cover;
-  background-position: center right;
+  background-position: center center;
   background-repeat: no-repeat;
   padding-top: 100px;
+  position: relative;
+}
+
+.sfm-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(30, 30, 30, 0.6);
+  z-index: 1;
+}
+
+.sfm-hero > * {
+  position: relative;
+  z-index: 2;
 }
 
 .sfm-hero__content {
