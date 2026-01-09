@@ -3,7 +3,28 @@
   display: flex;
   align-items: center;
   background-color: var(--color-dark);
+  background-image: url('/images/artboard-devices.webp');
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
   padding-top: 100px;
+  position: relative;
+}
+
+.sfm-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, rgba(30, 30, 30, 0.95) 0%, rgba(30, 30, 30, 0.7) 50%, rgba(30, 30, 30, 0.3) 100%);
+  z-index: 1;
+}
+
+.sfm-hero > * {
+  position: relative;
+  z-index: 2;
 }
 
 .sfm-hero__content {

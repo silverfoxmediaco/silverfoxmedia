@@ -164,6 +164,15 @@ Environment Variables configured:
 - STRIPE_WEBHOOK_SECRET (pending)
 - SMTP settings (pending)
 
+HERO BACKGROUND IMAGE
+---------------------
+- Downloaded artboard-devices.webp from S3 (s3://silverfoxmedia/artboard-devices.webp)
+- Added to client/public/images/artboard-devices.webp
+- Updated Home.css .sfm-hero section with:
+  - Background image with cover sizing
+  - Gradient overlay for text readability
+  - Z-index layering for content visibility
+
 NEXT STEPS
 ----------
 1. Create admin user via Render Shell: cd server && node scripts/createAdmin.js
