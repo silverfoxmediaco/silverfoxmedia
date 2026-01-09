@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Building a Creator Economy Platform: The Sexy Selfies Case Study | SilverFox Media</title>
+  <meta name="description" content="How we built Sexy Selfies - a mobile-first Progressive Web App for the creator economy featuring Tinder-style discovery and an industry-leading 80/20 revenue split.">
+  <meta name="keywords" content="PWA development, creator economy, mobile-first design, React development, case study, web application">
+  <meta name="author" content="James McEwen">
+  <link rel="canonical" href="https://silverfoxmedia.onrender.com/blog/sexyselfies-creator-platform-case-study.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Building a Creator Economy Platform: The Sexy Selfies Case Study">
+  <meta property="og:description" content="How we built a mobile-first Progressive Web App for the creator economy featuring Tinder-style discovery and an 80/20 revenue split.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://silverfoxmedia.onrender.com/blog/sexyselfies-creator-platform-case-study.html">
+  <meta property="og:site_name" content="SilverFox Media">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Building a Creator Economy Platform: Case Study">
+  <meta name="twitter:description" content="How we built a mobile-first PWA for the creator economy with Tinder-style discovery.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Schema.org Article -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Building a Creator Economy Platform: The Sexy Selfies Case Study",
+    "author": {
+      "@type": "Person",
+      "name": "James McEwen"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "SilverFox Media",
+      "url": "https://silverfoxmedia.onrender.com"
+    },
+    "datePublished": "2025-11-22",
+    "description": "How we built Sexy Selfies - a mobile-first Progressive Web App for the creator economy."
+  }
+  </script>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.7;
+      color: #333;
+      background-color: #fff;
+    }
+
+    .header {
+      background-color: #1E1E1E;
+      padding: 1rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .header-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      height: 50px;
+    }
+
+    .nav-link {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .nav-link:hover {
+      color: #0FCDCD;
+    }
+
+    .hero {
+      background-color: #1E1E1E;
+      color: #fff;
+      padding: 4rem 1.5rem;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    .hero-meta {
+      color: #0FCDCD;
+      font-size: 0.9rem;
+    }
+
+    .tags {
+      margin-top: 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.5rem;
+    }
+
+    .tag {
+      background-color: #0FCDCD;
+      color: #1E1E1E;
+      padding: 0.25rem 0.75rem;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: 500;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem;
+    }
+
+    .article-content h2 {
+      font-size: 1.75rem;
+      color: #1E1E1E;
+      margin: 2.5rem 0 1rem;
+    }
+
+    .article-content h3 {
+      font-size: 1.25rem;
+      color: #1E1E1E;
+      margin: 1.5rem 0 0.75rem;
+    }
+
+    .article-content p {
+      margin-bottom: 1.5rem;
+      font-size: 1.1rem;
+      color: #444;
+    }
+
+    .article-content ul, .article-content ol {
+      margin: 1rem 0 1.5rem 2rem;
+      font-size: 1.1rem;
+      color: #444;
+    }
+
+    .article-content li {
+      margin-bottom: 0.5rem;
+    }
+
+    .article-content a {
+      color: #0FCDCD;
+      text-decoration: none;
+    }
+
+    .article-content a:hover {
+      text-decoration: underline;
+    }
+
+    .highlight-box {
+      background-color: #f8f9fa;
+      border-left: 4px solid #0FCDCD;
+      padding: 1.5rem;
+      margin: 2rem 0;
+    }
+
+    .highlight-box p {
+      margin-bottom: 0;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+      margin: 2rem 0;
+    }
+
+    .stat-card {
+      background-color: #1E1E1E;
+      color: #fff;
+      padding: 1.5rem;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .stat-number {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #0FCDCD;
+    }
+
+    .stat-label {
+      font-size: 0.9rem;
+      margin-top: 0.5rem;
+    }
+
+    .tech-stack {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin: 1rem 0 2rem;
+    }
+
+    .tech-item {
+      background-color: #f0f0f0;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+
+    .cta-box {
+      background-color: #1E1E1E;
+      color: #fff;
+      padding: 2rem;
+      border-radius: 8px;
+      text-align: center;
+      margin-top: 3rem;
+    }
+
+    .cta-box h3 {
+      margin-bottom: 1rem;
+    }
+
+    .cta-button {
+      display: inline-block;
+      background-color: #0FCDCD;
+      color: #1E1E1E;
+      padding: 0.75rem 2rem;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background-color 0.3s;
+    }
+
+    .cta-button:hover {
+      background-color: #0db5b5;
+    }
+
+    .footer {
+      background-color: #1E1E1E;
+      color: #fff;
+      padding: 2rem 1.5rem;
+      text-align: center;
+    }
+
+    .footer a {
+      color: #0FCDCD;
+      text-decoration: none;
+    }
+
+    @media (min-width: 768px) {
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+
+      .stats-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="header-container">
+      <a href="/">
+        <img src="/images/silverfox-logo.webp" alt="SilverFox Media" class="logo">
+      </a>
+      <a href="/" class="nav-link">Back to Home</a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h1>Building a Creator Economy Platform: The Sexy Selfies Case Study</h1>
+    <p class="hero-meta">By James McEwen | November 22, 2025 | Case Study</p>
+    <div class="tags">
+      <span class="tag">PWA</span>
+      <span class="tag">React</span>
+      <span class="tag">Mobile-First</span>
+      <span class="tag">Creator Economy</span>
+    </div>
+  </section>
+
+  <main class="container">
+    <article class="article-content">
+      <p>The creator economy is booming. By 2025, over 50 million people worldwide consider themselves content creators, and platforms that help them monetize are in high demand.</p>
+
+      <p>When our client approached us to build Sexy Selfies, they had a clear vision: create a platform that puts creators first - both in earnings and user experience.</p>
+
+      <p>Here's how we made it happen.</p>
+
+      <h2>The Challenge</h2>
+      <p>Existing creator platforms have significant problems:</p>
+      <ul>
+        <li><strong>High platform fees</strong> - Major competitors take 20-50% of creator earnings</li>
+        <li><strong>Poor discovery</strong> - Creators struggle to get found among millions of profiles</li>
+        <li><strong>Subscription fatigue</strong> - Users are tired of $20+/month commitments</li>
+        <li><strong>Desktop-first design</strong> - Most users browse on mobile, but platforms aren't optimized for it</li>
+      </ul>
+      <p>Our goal was to solve all four problems with a single, mobile-first solution.</p>
+
+      <h2>Our Solution: A Mobile-First PWA</h2>
+      <p>We built Sexy Selfies as a Progressive Web App (PWA) - combining the best of web and native app experiences.</p>
+
+      <h3>Why PWA?</h3>
+      <ul>
+        <li><strong>Installs like an app</strong> - No app store approval needed</li>
+        <li><strong>Works offline</strong> - Users stay engaged even with poor connectivity</li>
+        <li><strong>Push notifications</strong> - Re-engage users automatically</li>
+        <li><strong>Fast load times</strong> - Under 2 seconds on mobile</li>
+        <li><strong>Cross-platform</strong> - Works on iOS, Android, and desktop</li>
+      </ul>
+      <p>For a platform where 100% of users are on mobile, PWA was the obvious choice.</p>
+
+      <h2>Key Features We Built</h2>
+
+      <h3>1. Tinder-Style Discovery</h3>
+      <p>Instead of endless scrolling through profiles, users swipe through creator cards. This gamified approach:</p>
+      <ul>
+        <li>Increases engagement and time-on-site</li>
+        <li>Helps creators get discovered organically</li>
+        <li>Creates a familiar, intuitive UX</li>
+      </ul>
+
+      <h3>2. Industry-Leading 80/20 Revenue Split</h3>
+      <div class="highlight-box">
+        <p><strong>Creators keep 80% of everything they earn.</strong></p>
+        <p>Most platforms take 20-50% of creator earnings. SexySelfies flipped the script.</p>
+      </div>
+      <p>This became a major marketing differentiator and attracts serious creators who are tired of losing money to platform fees.</p>
+
+      <h3>3. Micro-Transaction Model</h3>
+      <p>Rather than monthly subscriptions, we implemented pay-per-content pricing ($0.99-$3.99 per unlock). Benefits:</p>
+      <ul>
+        <li>Lower barrier to entry for users</li>
+        <li>Increases impulse purchases</li>
+        <li>Creators earn from casual browsers, not just subscribers</li>
+      </ul>
+
+      <h3>4. Real-Time Messaging</h3>
+      <p>Built with Socket.io, the messaging system includes:</p>
+      <ul>
+        <li>Instant message delivery</li>
+        <li>Read receipts and typing indicators</li>
+        <li>Image/media sharing</li>
+        <li>Email notifications for offline users</li>
+      </ul>
+
+      <h3>5. Creator Dashboard</h3>
+      <p>Creators get a full analytics suite:</p>
+      <ul>
+        <li>Earnings tracking and payout management</li>
+        <li>Content performance analytics</li>
+        <li>Connection/follower insights</li>
+        <li>Real-time notifications</li>
+      </ul>
+
+      <h2>Tech Stack</h2>
+      <p>For the technically curious, here's what powers the platform:</p>
+      <div class="tech-stack">
+        <span class="tech-item">React + Vite</span>
+        <span class="tech-item">Node.js</span>
+        <span class="tech-item">Express</span>
+        <span class="tech-item">MongoDB Atlas</span>
+        <span class="tech-item">Socket.io</span>
+        <span class="tech-item">AWS S3</span>
+        <span class="tech-item">CloudFront CDN</span>
+        <span class="tech-item">Stripe</span>
+      </div>
+
+      <h2>Performance Results</h2>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-number">95+</div>
+          <div class="stat-label">Lighthouse Score</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">&lt;2s</div>
+          <div class="stat-label">Time to Interactive</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">54+</div>
+          <div class="stat-label">Pages Indexed</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">24%</div>
+          <div class="stat-label">Avg CTR</div>
+        </div>
+      </div>
+
+      <h2>Lessons Learned</h2>
+
+      <h3>1. Mobile-First Isn't Optional</h3>
+      <p>When your entire user base is on mobile, every decision must prioritize the mobile experience. We designed mobile-first, then adapted for larger screens - not the other way around.</p>
+
+      <h3>2. PWAs Are Underrated</h3>
+      <p>For the right use case, PWAs offer native-app experiences without the App Store headaches. Faster deployment, easier updates, and cross-platform compatibility make them ideal for startups.</p>
+
+      <h3>3. Creator-Friendly Terms Win</h3>
+      <p>The 80/20 revenue split became SexySelfies' biggest selling point. In a market where creators feel exploited by platforms, transparent and fair terms build trust and loyalty.</p>
+
+      <h2>Conclusion</h2>
+      <p>Building SexySelfies challenged us to think differently about content platforms. By combining dating-app UX patterns with creator monetization, we delivered something genuinely new to the market.</p>
+
+      <p>The result? A fast, engaging, mobile-first platform that puts creators first.</p>
+
+      <div class="cta-box">
+        <h3>Interested in Building a Platform?</h3>
+        <p>Contact SilverFox Media to discuss your project.</p>
+        <a href="/contact" class="cta-button">Start Your Project</a>
+      </div>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 SilverFox Media. All rights reserved.</p>
+    <p><a href="tel:9728008105">(972) 800-8105</a> | <a href="mailto:james@silverfoxmedia.co">james@silverfoxmedia.co</a></p>
+  </footer>
+</body>
+</html>

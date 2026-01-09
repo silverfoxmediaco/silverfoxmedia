@@ -173,6 +173,20 @@ HERO BACKGROUND IMAGE
   - Gradient overlay for text readability
   - Z-index layering for content visibility
 
+STATIC BLOG PAGES (SEO)
+-----------------------
+Created static HTML landing pages in client/public/blog/ for Google indexing:
+- getting-started-with-building-a-website.html
+- user-surveys.html
+- sexyselfies-creator-platform-case-study.html
+
+Each page includes:
+- Proper meta tags (title, description, keywords)
+- Open Graph and Twitter Card tags
+- Schema.org Article structured data
+- Brand-consistent styling (Poppins font, teal/dark theme)
+- CTA sections linking to contact page
+
 NEXT STEPS
 ----------
 1. Create admin user via Render Shell: cd server && node scripts/createAdmin.js

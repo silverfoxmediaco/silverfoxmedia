@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Surveys: The Foundation of Great UX Design | SilverFox Media</title>
+  <meta name="description" content="Learn why user surveys are essential in UX design. Discover how proper user research leads to better websites and apps that users actually want to use.">
+  <meta name="keywords" content="user surveys, UX research, UX design, user experience, competitive analysis, web development">
+  <meta name="author" content="James McEwen">
+  <link rel="canonical" href="https://silverfoxmedia.onrender.com/blog/user-surveys.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="User Surveys: The Foundation of Great UX Design | SilverFox Media">
+  <meta property="og:description" content="Learn why user surveys are essential in UX design and how proper user research leads to better websites and apps.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://silverfoxmedia.onrender.com/blog/user-surveys.html">
+  <meta property="og:site_name" content="SilverFox Media">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="User Surveys: The Foundation of Great UX Design">
+  <meta name="twitter:description" content="Learn why user surveys are essential in UX design and how proper user research leads to better websites and apps.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Schema.org Article -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "User Surveys: The Foundation of Great UX Design",
+    "author": {
+      "@type": "Person",
+      "name": "James McEwen"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "SilverFox Media",
+      "url": "https://silverfoxmedia.onrender.com"
+    },
+    "datePublished": "2020-11-04",
+    "dateModified": "2023-05-13",
+    "description": "Learn why user surveys are essential in UX design. Discover how proper user research leads to better websites and apps."
+  }
+  </script>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.7;
+      color: #333;
+      background-color: #fff;
+    }
+
+    .header {
+      background-color: #1E1E1E;
+      padding: 1rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .header-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      height: 50px;
+    }
+
+    .nav-link {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .nav-link:hover {
+      color: #0FCDCD;
+    }
+
+    .hero {
+      background-color: #1E1E1E;
+      color: #fff;
+      padding: 4rem 1.5rem;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    .hero-meta {
+      color: #0FCDCD;
+      font-size: 0.9rem;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem;
+    }
+
+    .article-content h2 {
+      font-size: 1.75rem;
+      color: #1E1E1E;
+      margin: 2rem 0 1rem;
+    }
+
+    .article-content p {
+      margin-bottom: 1.5rem;
+      font-size: 1.1rem;
+      color: #444;
+    }
+
+    .article-content a {
+      color: #0FCDCD;
+      text-decoration: none;
+    }
+
+    .article-content a:hover {
+      text-decoration: underline;
+    }
+
+    .highlight-box {
+      background-color: #f8f9fa;
+      border-left: 4px solid #0FCDCD;
+      padding: 1.5rem;
+      margin: 2rem 0;
+    }
+
+    .highlight-box p {
+      margin-bottom: 0;
+      font-style: italic;
+    }
+
+    .cta-box {
+      background-color: #1E1E1E;
+      color: #fff;
+      padding: 2rem;
+      border-radius: 8px;
+      text-align: center;
+      margin-top: 3rem;
+    }
+
+    .cta-box h3 {
+      margin-bottom: 1rem;
+    }
+
+    .cta-button {
+      display: inline-block;
+      background-color: #0FCDCD;
+      color: #1E1E1E;
+      padding: 0.75rem 2rem;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background-color 0.3s;
+    }
+
+    .cta-button:hover {
+      background-color: #0db5b5;
+    }
+
+    .footer {
+      background-color: #1E1E1E;
+      color: #fff;
+      padding: 2rem 1.5rem;
+      text-align: center;
+    }
+
+    .footer a {
+      color: #0FCDCD;
+      text-decoration: none;
+    }
+
+    @media (min-width: 768px) {
+      .hero h1 {
+        font-size: 3rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="header-container">
+      <a href="/">
+        <img src="/images/silverfox-logo.webp" alt="SilverFox Media" class="logo">
+      </a>
+      <a href="/" class="nav-link">Back to Home</a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h1>User Surveys: The Foundation of Great UX Design</h1>
+    <p class="hero-meta">By James McEwen | November 4, 2020 | Building Websites</p>
+  </section>
+
+  <main class="container">
+    <article class="article-content">
+      <p>What is a User Survey? In the world of UX Design, User Surveys are essential in the design of any website or application. When building a new app or website there is always a bias towards the design from either the stakeholder or designers and this is not good. Designing any website or app should always begin with placing the end users needs first.</p>
+
+      <div class="highlight-box">
+        <p>Have you ever been on an app or website and had no idea where to go on it or hit a point of frustration with the functionality of it? Well this is because the developer more than likely didn't conduct user surveys.</p>
+      </div>
+
+      <h2>Why User Surveys Matter</h2>
+      <p>When developers skip user surveys, they also tend to skip usability testing and prototyping. This leads to products that frustrate users and fail to meet their actual needs.</p>
+
+      <p>User surveys are simple surveys that a UX researcher would conduct with random people that allows them to collect valuable data that will give the design team direction on the design and flow of a great website or app. Or whether there is even a need to build such an app or website.</p>
+
+      <h2>The Competitive Analysis Connection</h2>
+      <p>There are a lot of people out there that think they might have a Great idea for an app and then jump in trying to develop it and then realize no one is using the app or that there are already apps just like it out there.</p>
+
+      <p>If they would have done a competitive analysis they would have found out that there is already an app for their great idea, and then conducting a user survey they would have also found out that perhaps no one else thought it was a great idea depending on the survey answers.</p>
+
+      <h2>Key Takeaways</h2>
+      <p>Before starting any web or app development project:</p>
+      <ul style="margin: 1rem 0 1.5rem 2rem; font-size: 1.1rem; color: #444;">
+        <li>Conduct user surveys to understand your target audience</li>
+        <li>Perform competitive analysis to see what already exists</li>
+        <li>Validate your idea before investing in development</li>
+        <li>Always put the end user's needs first</li>
+      </ul>
+
+      <div class="cta-box">
+        <h3>Need Help With UX Research?</h3>
+        <p>Our team can help you conduct proper user research before building your website or app.</p>
+        <a href="/contact" class="cta-button">Get a Free Consultation</a>
+      </div>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 SilverFox Media. All rights reserved.</p>
+    <p><a href="tel:9728008105">(972) 800-8105</a> | <a href="mailto:james@silverfoxmedia.co">james@silverfoxmedia.co</a></p>
+  </footer>
+</body>
+</html>
