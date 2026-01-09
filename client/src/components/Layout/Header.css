@@ -4,7 +4,7 @@
   left: 0;
   right: 0;
   z-index: 1000;
-  background-color: var(--color-white);
+  background-color: var(--color-dark);
   transition: all var(--transition-normal);
 }
 
@@ -51,7 +51,7 @@
 }
 
 .sfm-header__nav-link {
-  color: var(--color-dark);
+  color: var(--color-white);
   font-size: var(--font-size-sm);
   font-weight: 500;
   text-transform: uppercase;
@@ -90,7 +90,7 @@
   height: 44px;
   background: none;
   border: none;
-  color: var(--color-dark);
+  color: var(--color-white);
   font-size: 1.5rem;
   cursor: pointer;
   transition: color var(--transition-fast);
