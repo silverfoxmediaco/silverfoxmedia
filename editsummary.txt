@@ -208,6 +208,48 @@ Each page includes:
 - Brand-consistent styling (Poppins font, teal/dark theme)
 - CTA sections linking to contact page
 
+WHITE BACKGROUND THEME UPDATE
+-----------------------------
+Updated Home.css from dark theme to light/white theme:
+
+Hero Section:
+- background-color: white (was dark)
+- Reduced gradient orb opacity for light background
+- hero__title-line: dark color (was white)
+- hero__subtitle: gray-600 (was gray-400)
+- btn-outline-glow: dark text and border (was white)
+
+Stats Bar:
+- background: gray-100 (was dark gradient)
+- Borders updated to light theme
+
+Services Section:
+- background-color: white
+- service-card: white bg with light shadow and border
+- Text colors updated to dark/gray-600
+
+Experience Section:
+- background: gray-100
+- experience__feature: white bg with light border/shadow
+- experience__feature h4: dark color (was white)
+- experience__feature p: gray-600 (was gray-500)
+- experience__floating-card: white bg, dark text
+
+Portfolio Section:
+- background-color: white (was dark-lighter)
+- portfolio-card: white bg with light shadow
+- portfolio-card__title: dark color (was white)
+
+Platforms Section:
+- background: gray-100 (was dark)
+- Removed brightness filter on logos
+
+CTA Section:
+- background: white (was dark)
+- cta-section__title: dark color (was white)
+- cta-section__text: gray-600 (was gray-400)
+- btn-phone: dark color (was white)
+
 NEXT STEPS
 ----------
 1. Create admin user via Render Shell: cd server && node scripts/createAdmin.js
