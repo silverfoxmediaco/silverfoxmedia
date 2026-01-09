@@ -173,6 +173,27 @@ HERO BACKGROUND IMAGE
   - Gradient overlay for text readability
   - Z-index layering for content visibility
 
+DYNAMIC HOMEPAGE REDESIGN
+-------------------------
+Complete redesign of Home.js and Home.css with modern agency-style UI:
+- Interactive hero with mouse-tracking gradient orbs
+- Animated text reveals with Framer Motion
+- Scroll-triggered section animations
+- Animated stat counters
+- Service cards with hover effects and gradients
+- Experience section with image stack (desktop)
+- Portfolio grid with dynamic project loading
+- Platform logos section
+- CTA section with gradient overlays
+- Shimmer animation on accent text
+- Responsive breakpoints at 640px, 1024px, 1280px
+
+New features:
+- useScroll/useTransform for parallax effects
+- useInView for scroll-triggered animations
+- Counter component for animated stats
+- AnimatedText and AnimatedSection reusable components
+
 STATIC BLOG PAGES (SEO)
 -----------------------
 Created static HTML landing pages in client/public/blog/ for Google indexing:
