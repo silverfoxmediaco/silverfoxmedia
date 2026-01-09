@@ -71,7 +71,6 @@ blogPostSchema.pre('save', function(next) {
   next();
 });
 
-blogPostSchema.index({ slug: 1 });
 blogPostSchema.index({ isPublished: 1, publishedAt: -1 });
 blogPostSchema.index({ category: 1 });
 blogPostSchema.index({ tags: 1 });

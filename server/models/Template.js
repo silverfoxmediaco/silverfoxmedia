@@ -93,7 +93,6 @@ templateSchema.pre('save', function(next) {
   next();
 });
 
-templateSchema.index({ slug: 1 });
 templateSchema.index({ isPublished: 1, category: 1 });
 
 module.exports = mongoose.model('Template', templateSchema);

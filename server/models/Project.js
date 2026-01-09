@@ -74,7 +74,6 @@ projectSchema.pre('save', function(next) {
   next();
 });
 
-projectSchema.index({ slug: 1 });
 projectSchema.index({ isPublished: 1, order: -1 });
 
 module.exports = mongoose.model('Project', projectSchema);
