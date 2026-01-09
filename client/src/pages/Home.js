@@ -262,7 +262,7 @@ const Home = () => {
           >
             <div className="hero__device-mockup">
               <img
-                src="/images/hero-mockup.webp"
+                src="/images/artboard-devices.webp"
                 alt="Website mockup on devices"
                 className="hero__mockup-image"
               />
