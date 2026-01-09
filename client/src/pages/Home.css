@@ -3,7 +3,6 @@
   display: flex;
   align-items: center;
   background-color: var(--color-dark);
-  background-image: url('/images/artboard-devices.webp');
   background-size: cover;
   background-position: center right;
   background-repeat: no-repeat;

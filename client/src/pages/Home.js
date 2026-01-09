@@ -52,7 +52,10 @@ const Home = () => {
   return (
     <>
       <SEO />
-      <section className="sfm-hero">
+      <section
+        className="sfm-hero"
+        style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/images/artboard-devices.webp)` }}
+      >
         <div className="container">
           <motion.div
             className="sfm-hero__content"
