@@ -12,8 +12,8 @@ const SEO = ({
 }) => {
   const siteName = 'SilverFox Media';
   const defaultDescription = 'SilverFox Media specializes in UX/UI design and custom web development. Over 12 years of experience building user-first, mobile-responsive websites that drive results.';
-  const defaultImage = '/images/silverfox-og-image.jpg';
-  const siteUrl = 'https://silverfoxmedia.co';
+  const defaultImage = 'https://silverfoxmedia.onrender.com/images/silverfox-logo.webp';
+  const siteUrl = 'https://silverfoxmedia.onrender.com';
 
   const fullTitle = title ? `${title} | ${siteName}` : `${siteName} | UX/UI Design & Web Development`;
   const fullDescription = description || defaultDescription;
