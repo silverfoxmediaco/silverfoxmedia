@@ -429,40 +429,54 @@ const Home = () => {
           </AnimatedText>
 
           <div className="portfolio-grid">
-            {featuredProjects.length > 0 ? (
-              featuredProjects.map((project, index) => (
-                <AnimatedSection key={project._id} delay={index * 0.15}>
-                  <Link to={`/portfolio/${project.slug}`} className="portfolio-card">
-                    <div className="portfolio-card__image">
-                      <img src={project.featuredImage} alt={project.title} />
-                      <div className="portfolio-card__overlay">
-                        <span className="portfolio-card__view">
-                          View Project <FiArrowUpRight />
-                        </span>
-                      </div>
-                    </div>
-                    <div className="portfolio-card__content">
-                      <h3 className="portfolio-card__title">{project.title}</h3>
-                      <p className="portfolio-card__category">{project.category}</p>
-                    </div>
-                  </Link>
-                </AnimatedSection>
-              ))
-            ) : (
-              [1, 2, 3, 4].map((_, index) => (
-                <AnimatedSection key={index} delay={index * 0.15}>
-                  <div className="portfolio-card portfolio-card--placeholder">
-                    <div className="portfolio-card__image">
-                      <div className="portfolio-card__placeholder-bg" />
-                    </div>
-                    <div className="portfolio-card__content">
-                      <h3 className="portfolio-card__title">Coming Soon</h3>
-                      <p className="portfolio-card__category">Project</p>
+            {/* Hardcoded Portfolio Projects */}
+            {[
+              {
+                id: 1,
+                title: 'Pagomigo',
+                category: 'Web Application',
+                image: '/images/portfolio/pagomigo.png',
+                url: 'https://www.pagomigo.com/'
+              },
+              {
+                id: 2,
+                title: 'Grace to Change',
+                category: 'Non-Profit',
+                image: '/images/portfolio/gracetochange.webp',
+                url: 'https://gracetochange.org/'
+              },
+              {
+                id: 3,
+                title: 'NTX Luxury Van Rentals',
+                category: 'Transportation',
+                image: '/images/portfolio/ntxvanrentals.png',
+                url: 'https://ntxluxuryvanrentals.com/'
+              },
+              {
+                id: 4,
+                title: 'GymCrush',
+                category: 'Fitness App',
+                image: '/images/portfolio/gymcrush.png',
+                url: 'https://gymcrush.io/'
+              },
+            ].map((project, index) => (
+              <AnimatedSection key={project.id} delay={index * 0.15}>
+                <a href={project.url} target="_blank" rel="noopener noreferrer" className="portfolio-card">
+                  <div className="portfolio-card__image">
+                    <img src={project.image} alt={project.title} />
+                    <div className="portfolio-card__overlay">
+                      <span className="portfolio-card__view">
+                        View Project <FiArrowUpRight />
+                      </span>
                     </div>
                   </div>
-                </AnimatedSection>
-              ))
-            )}
+                  <div className="portfolio-card__content">
+                    <h3 className="portfolio-card__title">{project.title}</h3>
+                    <p className="portfolio-card__category">{project.category}</p>
+                  </div>
+                </a>
+              </AnimatedSection>
+            ))}
           </div>
 
           <AnimatedSection className="portfolio-section__cta">
