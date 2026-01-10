@@ -153,6 +153,8 @@ const Home = () => {
     { name: 'AWS', logo: '/images/platforms/aws.svg' },
     { name: 'Stripe', logo: '/images/platforms/stripe.svg' },
     { name: 'Plaid', logo: '/images/platforms/plaid.svg' },
+    { name: 'Cloudinary', logo: '/images/platforms/cloudinary.png' },
+    { name: 'Render', logo: '/images/platforms/render.svg' },
     { name: 'WordPress', logo: '/images/platforms/wordpress.png' },
     { name: 'Shopify', logo: '/images/platforms/shopify.png' },
     { name: 'Webflow', logo: '/images/platforms/webflow.png' },
