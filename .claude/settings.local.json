@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run install-all:*)",
+      "Bash(git push:*)",
+      "Bash(export AWS_ACCESS_KEY_ID=AKIAXISUIGJY4KFGWTX4)",
+      "Bash(export AWS_SECRET_ACCESS_KEY:*)",
+      "Bash(export AWS_DEFAULT_REGION=us-east-2)",
+      "Bash(aws s3 cp:*)",
+      "Bash(curl:*)",
+      "Bash(ls:*)"
+    ]
+  }
+}

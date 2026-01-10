@@ -6,7 +6,7 @@
   min-height: 100vh;
   display: flex;
   align-items: center;
-  padding: 36px 0 80px;
+  padding: 5vh 0 10vh;
   overflow: hidden;
   background-color: var(--color-white);
 }
@@ -877,7 +877,7 @@
 
 @media (min-width: 1024px) {
   .hero {
-    padding: 40px 0 0;
+    padding: 5vh 0 0;
   }
 
   .hero__content {

@@ -250,6 +250,22 @@ CTA Section:
 - cta-section__text: gray-600 (was gray-400)
 - btn-phone: dark color (was white)
 
+HERO RESPONSIVE PADDING FIX
+---------------------------
+Date: January 10, 2026
+
+Changed hero padding from fixed pixels to viewport-based units (vh) for better scaling across different screen sizes:
+
+Before:
+- Mobile: padding: 36px 0 80px;
+- Desktop (1024px+): padding: 40px 0 0;
+
+After:
+- Mobile: padding: 5vh 0 10vh;
+- Desktop (1024px+): padding: 5vh 0 0;
+
+This ensures consistent spacing that scales proportionally with viewport height, fixing overlap issues on smaller devices like Samsung Galaxy S8+ (360x740).
+
 NEXT STEPS
 ----------
 1. Create admin user via Render Shell: cd server && node scripts/createAdmin.js
