@@ -6,7 +6,7 @@
   min-height: 100vh;
   display: flex;
   align-items: center;
-  padding: 100px 0 80px;
+  padding: 36px 0 80px;
   overflow: hidden;
   background-color: var(--color-white);
 }
