@@ -146,11 +146,11 @@ const Home = () => {
   ];
 
   const platforms = [
-    { name: 'WordPress', logo: '/images/platforms/wordpress.svg' },
-    { name: 'Shopify', logo: '/images/platforms/shopify.svg' },
-    { name: 'Webflow', logo: '/images/platforms/webflow.svg' },
-    { name: 'React', logo: '/images/platforms/react.svg' },
-    { name: 'Wix', logo: '/images/platforms/wix.svg' }
+    { name: 'WordPress', logo: '/images/platforms/wordpress.png' },
+    { name: 'Shopify', logo: '/images/platforms/shopify.png' },
+    { name: 'Webflow', logo: '/images/platforms/webflow.png' },
+    { name: 'React', logo: '/images/platforms/react.png' },
+    { name: 'Wix', logo: '/images/platforms/wix.png' }
   ];
 
   return (
