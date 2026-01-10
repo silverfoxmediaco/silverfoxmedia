@@ -435,7 +435,7 @@ const Home = () => {
                 id: 1,
                 title: 'Pagomigo',
                 category: 'Web Application',
-                image: '/images/portfolio/pagomigo.png',
+                image: '/images/portfolio/pagomigo.webp',
                 url: 'https://www.pagomigo.com/'
               },
               {
@@ -449,14 +449,14 @@ const Home = () => {
                 id: 3,
                 title: 'NTX Luxury Van Rentals',
                 category: 'Transportation',
-                image: '/images/portfolio/ntxvanrentals.png',
+                image: '/images/portfolio/ntxvanrentals.webp',
                 url: 'https://ntxluxuryvanrentals.com/'
               },
               {
                 id: 4,
                 title: 'GymCrush',
-                category: 'Fitness App',
-                image: '/images/portfolio/gymcrush.png',
+                category: 'Dating App',
+                image: '/images/portfolio/gymcrush.webp',
                 url: 'https://gymcrush.io/'
               },
             ].map((project, index) => (
