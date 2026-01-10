@@ -152,6 +152,7 @@ const Home = () => {
     { name: 'JavaScript', logo: '/images/platforms/javascript.svg' },
     { name: 'AWS', logo: '/images/platforms/aws.svg' },
     { name: 'Stripe', logo: '/images/platforms/stripe.svg' },
+    { name: 'Plaid', logo: '/images/platforms/plaid.svg' },
     { name: 'WordPress', logo: '/images/platforms/wordpress.png' },
     { name: 'Shopify', logo: '/images/platforms/shopify.png' },
     { name: 'Webflow', logo: '/images/platforms/webflow.png' },
