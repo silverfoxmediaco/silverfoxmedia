@@ -28,6 +28,7 @@
 .sfm-header__logo-image {
   height: 50px;
   width: auto;
+  margin: 10px 0;
 }
 
 .sfm-header__phone {
