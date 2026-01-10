@@ -146,10 +146,16 @@ const Home = () => {
   ];
 
   const platforms = [
+    { name: 'React', logo: '/images/platforms/react.svg' },
+    { name: 'Node.js', logo: '/images/platforms/nodejs.svg' },
+    { name: 'MongoDB', logo: '/images/platforms/mongodb.svg' },
+    { name: 'JavaScript', logo: '/images/platforms/javascript.svg' },
+    { name: 'AWS', logo: '/images/platforms/aws.svg' },
+    { name: 'Stripe', logo: '/images/platforms/stripe.svg' },
     { name: 'WordPress', logo: '/images/platforms/wordpress.png' },
     { name: 'Shopify', logo: '/images/platforms/shopify.png' },
     { name: 'Webflow', logo: '/images/platforms/webflow.png' },
-    { name: 'React', logo: '/images/platforms/react.png' },
+    { name: 'Bubble', logo: '/images/platforms/bubble.png' },
     { name: 'Wix', logo: '/images/platforms/wix.png' }
   ];
 
